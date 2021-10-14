@@ -1,0 +1,7 @@
+{
+  "name": "appcobro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
