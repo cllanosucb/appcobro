@@ -1,0 +1,34 @@
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/logo/logo.png">
+    </ion-card-header>
+
+    <ion-card-content>
+      <form (ngSubmit)="ingresar( fingresar )" #fingresar="ngForm">
+      <ion-item>
+        <ion-label position="floating">Cedula de Identidad</ion-label>
+        <ion-input 
+          name="user" 
+          type="text" 
+          [(ngModel)]="nit" 
+          required></ion-input>
+      </ion-item>
+      <ion-item-divider></ion-item-divider>
+      <ion-button 
+        color="primary" 
+        type="submit" 
+        expand="block" 
+        size="default"
+        [disabled]="!nit">Ingresar</ion-button>
+      <!-- <ion-label id="error" color="danger">{{ errormsg != null ? errormsg : '' }}</ion-label> -->
+      </form>
+      <br>
+      <ion-text color="danger">{{error ? msg : ''}}</ion-text>
+
+    </ion-card-content>
+
+  </ion-card>
+      
+</ion-content>

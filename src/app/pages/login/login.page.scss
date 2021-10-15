@@ -1,0 +1,23 @@
+ion-content{
+    --background:#ff3838;
+}
+
+ion-card {
+    overflow: visible;
+    width: 80%;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+ion-card-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img{
+        height: 150px;
+       // margin-top: 60%;
+    }
+}
+
