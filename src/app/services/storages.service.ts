@@ -27,7 +27,7 @@ export class StoragesService {
   async get(key: string) {
     const data = await this._storage.get(key);
 
-    console.log( data );
+    console.log("storage", data);
     return data;
     
 
